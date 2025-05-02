@@ -1,11 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
-Route::get('/', function () {
-    //return view('welcome');
-    return "<h1> Hello World!</h1>";
-});
+Route::get('/',[WelcomeController::class,'index']);
 
 Route::get('/home', function () {
     return view('home');
