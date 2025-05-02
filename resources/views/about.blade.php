@@ -1,8 +1,8 @@
-@extends('layouts.base')
+    <x-base>
+    <x-slot name="name">njaramoses</x-slot>
 
-@section('name','njaramoses')
-
-@section('content')
-<h1 class="text-4xl font-bold">About Us</h1>
-<p class="mt-4 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque in saepe ea eius ex recusandae impedit earum! Aperiam quibusdam quos voluptate quisquam cum saepe incidunt odio delectus! Eius, obcaecati asperiores.</p>
-@endSection
+    <x-slot name="content">
+    <h1 class="text-4xl font-bold">About Us </h1>
+    <p class="mt-4 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque in saepe ea eius ex recusandae impedit earum! Aperiam quibusdam quos voluptate quisquam cum saepe incidunt odio delectus! Eius, obcaecati asperiores.</p>
+    </x-slot>
+    </x-base>
