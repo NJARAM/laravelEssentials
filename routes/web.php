@@ -33,11 +33,22 @@ Route::get('/',function(){
     //d. $students = Student::select(['name','email'])->whereNotNull('email')->orderBy('name');
     // dd($students);
 
-    $student = new Student;
-    $student->name="jane";
-    $student->email="jane@example.com";
-    $student->save();
-    
+    //c. $student = new Student;
+    // $student->name="jane";
+    // $student->email="jane@example.com";
+    // $student->save();
+
+    //challenge
+    $students = Student::where('email','judy@example.com')->first();
+
+    $students->status = 'active';
+
+    $students->save();
+
+    dd($students);
+
+
+
 });
 
 Route::get('/hello',[GreetingController::class,'index']);
